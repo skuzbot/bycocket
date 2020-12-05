@@ -2,17 +2,11 @@ defmodule Neo do
   @moduledoc """
   Documentation for `Neo`.
   """
+  alias Bolt.Sips
 
-  @doc """
-  Hello world.
+  # alias Bolt.Sips.Response
 
-  ## Examples
+  def info(), do: Sips.info()
 
-      iex> Neo.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  def conn(), do: Sips.conn()
 end
